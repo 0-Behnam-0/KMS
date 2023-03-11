@@ -15,9 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from experience import urls as experience_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('experience/', include(experience_urls)),
+    # path('experience/', include('experience.urls')),
 ]
